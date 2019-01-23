@@ -49,15 +49,15 @@ All these training graphs have the same hyper parameters -  Gamma = 0.99, Alpha 
 
 **Scores per episode** - This graph denotes the score obtained per each episode. We can see that score value obtained in the each episode started from around -600 and as the model kept learning, it reached upto 200 and 250 (250 is clear from the next graph)
 
-![alt text](https://drive.google.com/open?id=1RrtEsovZKna8eXjQE-k0enfz_VGJ6YzM)
+![alt text](https://github.com/sgondala/LunarLander/blob/master/images/1.PNG)
 
 **Total score per episode for last 100 episodes**  - This graph is same as above, but zoomed in to reveal only the total scores of last 100 episodes before the algorithm converged. As we can see, the total score in each episode went upto 250. 
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sgondala/LunarLander/blob/master/images/2.PNG)
 
 **Mean score over the training process** - In this graph, f(x) denote the mean total scores for 100 episodes in the range [x*100-99, x*100]
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sgondala/LunarLander/blob/master/images/3.PNG)
 
 ### Test Graph 
 
@@ -65,17 +65,17 @@ Using the trained model, I ran a set of 100 trials and computed the score value 
 
 The mean score value for 100 trails is 187.34
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sgondala/LunarLander/blob/master/images/4.PNG)
 
 
 **Effect of varying Alpha with optimal gamma = 0.99**
 
 We can see that Alpha = 0.1 and 0.3 perform really bad. This is the range of Alphas where learning rate is higher than optimal and does not converge at all.  While alpha = 0.005 performs optimally, we can see that alpha = 0.001 is also on the path of convergence and just requires bit more learning
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sgondala/LunarLander/blob/master/images/5.PNG)
 
 **Effect of varying Gamma with optimal Alpha = 0.005**
 
 From the graph we can see that gamma around 0.99 is the ideal range. When gamma = 1, it suffers from having to look ahead too much into the future and gamma = 0.95 also is not optimal because it is not looking “enough” hence learning less than what it could actually learn
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/sgondala/LunarLander/blob/master/images/6.PNG)

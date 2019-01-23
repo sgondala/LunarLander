@@ -1,6 +1,6 @@
 # Lunar Lander 
 
-## Instructions to run -
+## Instructions to run - 
 
 Dependencies - gym, numpy, tensorflow, matplotlib
 

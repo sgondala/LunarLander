@@ -23,7 +23,7 @@ This game consists of a rocket trying to land on the moon. Input is a continuous
 There are several ways to solve this problem. 
 
 **Discretization** - We discretize continuous state space and we would then end up with a finite number of discrete states. We can apply Q Learning on the discrete states to solve this problem. However, there are multiple issues here 
-Say we divide first 6 attributes of a state into discrete components. First 2 are range values - x,y. Say we divide them into 200 parts. Next 2 are velocity components. Let’s divide them into 20 parts each. Next two are angle values - Say we divide them into 360 parts each, each part for each angle. The total number of states we have here is 200*200*20*20*360*360*2*2 ~ 10^13 states. It is not computationally feasible to apply Q Learning
+Say we divide first 6 attributes of a state into discrete components. First 2 are range values - x,y. Say we divide them into 200 parts. Next 2 are velocity components. Let’s divide them into 20 parts each. Next two are angle values - Say we divide them into 360 parts each, each part for each angle. The total number of states we have here is 200 * 200 * 20 * 20 * 360 * 360 * 2 * 2 ~ 10^13 states. It is not computationally feasible to apply Q Learning
 Information can also be lost in discretization and could result in mishandling of edge cases
 
 
